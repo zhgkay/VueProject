@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
-import Myhttp from "./Axios/http";
+import Myhttp from "./Axios/http"
+import MyApi from "./Axios/ports"
 
+Vue.config.productionTip = false
+Vue.prototype.MyApi = MyApi;
 Vue.prototype.Myhttp = Myhttp;
 /* eslint-disable no-new */
 new Vue({

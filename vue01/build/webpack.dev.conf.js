@@ -47,8 +47,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env'),
-      //配置网络请求根路径
-      "ROOT_PATH": "https://elm.cangdu.org",
+      // //配置网络请求根路径
+      // "ROOT_PATH": '"https://elm.cangdu.org"',
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
