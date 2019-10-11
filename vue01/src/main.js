@@ -5,11 +5,13 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+import Myhttp from "./Axios/http";
 
+Vue.prototype.Myhttp = Myhttp;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })
