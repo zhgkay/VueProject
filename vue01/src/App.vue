@@ -1,22 +1,23 @@
 <template>
   <div id="app">
     <router-view/>
+    <Footer_gzh></Footer_gzh>
   </div>
 </template>
 
 <script>
+  import './screen/zsy';
+  import Footer_gzh from "./components/Footer_gzh";
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Footer_gzh}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html,body{
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
 }
 </style>
