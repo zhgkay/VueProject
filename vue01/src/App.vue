@@ -1,20 +1,30 @@
 <template>
   <div id="app">
-    <E_me_zhm></E_me_zhm>
     <router-view/>
   </div>
 </template>
 
 <script>
-import E_me_zhm from "./components/E_me_zhm";
-export default {
-  name: 'App',
-  components: {E_me_zhm}
-}
+  import './screen/zsy';
+  export default {
+    name: 'App',
+    components: {}
+  }
 </script>
 
 <style>
-#app {
-
-}
+  #app{
+    background: #f5f5f5;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  html,body{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+  }
 </style>
